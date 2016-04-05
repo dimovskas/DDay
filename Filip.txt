@@ -1,4 +1,4 @@
-Most Used Character
+HOST Used Character
 
 Return the character that is used in most of the words.
 It doesn't matter if a character is used more than once in a word, it will still 
