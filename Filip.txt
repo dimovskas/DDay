@@ -1,0 +1,59 @@
+Most Used Character
+
+Return the character that is used in most of the words.
+It doesn't matter if a character is used more than once in a word, it will still 
+count as one word occurrence.
+
+Words in the sentence are divided with blank (' ') characters. 
+There may be multiple consecutive blanks on the beginning, end or in the middle of the sentence.
+
+If two characters show up in the same number of words, return the character
+that comes up first alphabetically.
+
+Remember: the return type is String of length one.
+
+Input parameters:
+  sentence - Sentence of words
+  
+Constraints:
+  sentence will be between 1 and 1000 characters long
+  sentence will consist of a blank ' ' and small letter characters 'a' to 'z' inclusive
+
+Return value:
+  The most used character.  
+
+Class Name:
+  MostUsedCharacter
+
+Method signature:
+  public String mostUsed(String sentence)
+
+Test Case 1:
+  mostUsed("a") = "a"
+
+Test Case 2:
+  mostUsed("bbbbba") = "a"
+  it isn't important how many times a character is in the same word
+Test Case 3:
+  mostUsed("zaaa y abyce qweew oiwuer kjhqwe mbqmqwe kasd qweq werkqwerq wer qwer qwerq wer") = "e"
+
+Test Case 4:
+  mostUsed("akjq w heas da sdq w ea sdea sdas dq weqw eq qqqqq qalk sjda eoi") = "a"
+
+Test Case 5:
+  mostUsed("d d d d c c c c x x x x b b b b") = "b"
+
+Test Case 6:
+  mostUsed("    c        b        ") = "b"
+  there may be multiple blanks in the beginning or the end of the sentence
+Test Case 7:
+  mostUsed("akjqq werj khhjjklqwerkjhkljqwherkjwheasdasdqweasdeas dasdqweqweqqqqqqqalksjdaeoi") = "j"
+
+Test Case 8:
+  mostUsed("k opiuqweorkl jhqwekrjho iuyqwherkjwheasdasdqwe asdeasdas dqweqweqqqqqqqalksjdaeoi") = "e"
+
+Test Case 9:
+  mostUsed("a aaaaaaaaaxxxxxxxxxxxxxxxxxaaa aaaaaaaaaaaxxxx xxxxxxxxxxaaaaaa aaaaaaaaaaaaaax xx") = "a"
+
+Test Case 10:
+  mostUsed("u u u u u u u uiiiuiuiuiuiuiiuiuiiiiiiiiiiuuiuiuiuiuiuuuuuuuuuuiuiuiiiiiiiiiiiuiuiuiu") = "u"
